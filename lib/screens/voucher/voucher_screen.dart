@@ -5,10 +5,10 @@ class VoucherScreen extends StatefulWidget {
   const VoucherScreen({super.key});
 
   @override
-  _VoucherScreenState createState() => _VoucherScreenState();
+  VoucherScreenState createState() => VoucherScreenState();
 }
 
-class _VoucherScreenState extends State<VoucherScreen> {
+class VoucherScreenState extends State<VoucherScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold();

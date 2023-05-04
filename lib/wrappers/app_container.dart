@@ -5,14 +5,14 @@ import 'package:moniepointtest/screens/settings/settings_screen.dart';
 import 'package:moniepointtest/screens/voucher/voucher_screen.dart';
 import 'package:moniepointtest/screens/wallet/wallet_screen.dart';
 
-class PrivateWrapper extends StatefulWidget {
-  const PrivateWrapper({super.key});
+class AppContainer extends StatefulWidget {
+  const AppContainer({super.key});
 
   @override
-  PrivateWrapperState createState() => PrivateWrapperState();
+  AppContainerState createState() => AppContainerState();
 }
 
-class PrivateWrapperState extends State<PrivateWrapper> {
+class AppContainerState extends State<AppContainer> {
   int _selectedIndex = 0;
 
   static final List<Widget> _pages = <Widget>[
@@ -37,30 +37,47 @@ class PrivateWrapperState extends State<PrivateWrapper> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        selectedIconTheme: IconThemeData(color: Palette.monieNavy, size: 30),
-        selectedItemColor: Palette.monieNavy,
-        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+        selectedIconTheme:
+            const IconThemeData(color: Palette.monieGreen, size: 30),
+        selectedItemColor: Palette.monieBlack1,
+        //selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
         unselectedIconTheme: const IconThemeData(
-          color: Colors.black87,
+          color: Palette.monieGrey,
+          size: 30,
         ),
-        unselectedItemColor: Colors.black87,
-        backgroundColor: Palette.monieYellow,
+        backgroundColor: Palette.monieWhite,
         showSelectedLabels: true,
         showUnselectedLabels: true,
         elevation: 10,
-        iconSize: 18,
+        //iconSize: 18,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Padding(
+              padding: EdgeInsets.only(bottom: 6.0),
+              child: Icon(Icons.home),
+            ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.cast_for_education_rounded),
-            label: 'Pages',
+            icon: Padding(
+              padding: EdgeInsets.only(bottom: 6.0),
+              child: Icon(Icons.wallet),
+            ),
+            label: 'Wallet',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.menu),
-            label: 'Info',
+            icon: Padding(
+              padding: EdgeInsets.only(bottom: 6.0),
+              child: Icon(Icons.money),
+            ),
+            label: 'Voucher',
+          ),
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: EdgeInsets.only(bottom: 6.0),
+              child: Icon(Icons.settings),
+            ),
+            label: 'Settings',
           ),
         ],
         currentIndex: _selectedIndex,
