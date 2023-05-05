@@ -28,7 +28,7 @@ class HomeSlider extends StatelessWidget {
           sliderTitle: 'DISCOVER OUR \nBEAUTY COLLECTION',
           sliderDescription: '',
           buttonText: 'Check this out',
-          sliderTitleFontSize: 20,
+          sliderTitleFontSize: 18,
           screen: HomeScreen(),
         ),
       ],
