@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Palette {
-  static const Color monieGreen = Color(0xFF5AAC98);
+  static const Color monieGreen = Color(0xFF229C7E);
   static const Color monieBlack1 = Color(0xFF000000);
   static const Color monieBlack2 = Color(0xFF06060B);
   static const Color monieBlack3 = Color(0xFF343545);

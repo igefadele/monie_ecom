@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:moniepointtest/screens/home/components/home_button_row.dart';
 import 'package:moniepointtest/screens/home/components/home_product_section.dart';
 import 'package:moniepointtest/screens/home/components/home_slider.dart';
+import 'package:moniepointtest/screens/home/components/search_bar_form.dart';
+import 'package:moniepointtest/screens/home/components/search_bar_icons.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,14 +14,52 @@ class HomeScreen extends StatefulWidget {
 }
 
 class HomeScreenState extends State<HomeScreen> {
+  ScrollController _scrollController = ScrollController();
+  bool _showAppBarBackground = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(() {
+      if (_scrollController.offset > 0 && !_showAppBarBackground) {
+        setState(() {
+          _showAppBarBackground = true;
+        });
+      } else if (_scrollController.offset <= 0 && _showAppBarBackground) {
+        setState(() {
+          _showAppBarBackground = false;
+        });
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,
+      //
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor:
+            _showAppBarBackground ? Colors.white : Colors.transparent,
+        title: const SearchBarForm(),
+        actions: const [
+          SearchBarIcons(),
+          SizedBox(width: 20),
+        ],
+      ),
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Column(
           children: const [
+            //HomeSearchBar(),
             HomeSlider(),
             HomeButtonRow(),
             HomeProductSection(),

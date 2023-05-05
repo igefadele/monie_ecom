@@ -45,7 +45,7 @@ class AppContainerState extends State<AppContainer> {
           color: Palette.monieGrey,
           size: 30,
         ),
-        backgroundColor: Palette.monieWhite,
+        backgroundColor: Palette.monieGrey2,
         showSelectedLabels: true,
         showUnselectedLabels: true,
         elevation: 10,
