@@ -9,6 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -19,6 +20,10 @@ flutter:
 
   assets:
     - assets/
+    - assets/monie_ecom_home/
+    - assets/monie_ecom_product/
+    - assets/monie_ecom_slider/
+
 
   
   # fonts:
