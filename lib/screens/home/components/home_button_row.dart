@@ -1,4 +1,3 @@
-import 'package:moniepointtest/res/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/screens/home/components/button_label_widget.dart';
 

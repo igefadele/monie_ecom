@@ -1,6 +1,7 @@
 import 'package:moniepointtest/res/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/screens/home/components/home_button_row.dart';
+import 'package:moniepointtest/screens/home/components/home_product_section.dart';
 import 'package:moniepointtest/screens/home/components/home_slider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,6 +22,7 @@ class HomeScreenState extends State<HomeScreen> {
           children: const [
             HomeSlider(),
             HomeButtonRow(),
+            HomeProductSection(),
           ],
         ),
       ),
