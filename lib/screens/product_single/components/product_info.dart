@@ -17,8 +17,8 @@ class ProductInfo extends StatelessWidget {
       padding: const EdgeInsets.only(
         top: 10,
         bottom: 10,
-        left: 10,
-        right: 10,
+        left: 20,
+        right: 20,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
