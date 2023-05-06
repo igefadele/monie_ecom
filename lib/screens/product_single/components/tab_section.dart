@@ -1,84 +1,72 @@
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/res/custom_colors.dart';
+import 'package:moniepointtest/screens/product_single/components/about_item_tab.dart';
 
 class TabSection extends StatelessWidget {
   const TabSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Theme(
-          data: Theme.of(context).copyWith(dividerColor: Colors.red),
-          child: Container(
-            decoration: const BoxDecoration(
-              border: Border(
-                bottom: BorderSide(
-                  color: Colors.grey,
-                  width: 1.0,
+    return Padding(
+      padding: const EdgeInsets.only(
+          //bottom: 20,
+          ),
+      child: Column(
+        children: [
+          Theme(
+            data: Theme.of(context).copyWith(dividerColor: Colors.red),
+            child: Container(
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+              ),
+              decoration: const BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.grey,
+                    width: 1.0,
+                  ),
                 ),
+              ),
+              child: const TabBar(
+                indicatorColor: Palette.monieGreen,
+                indicatorWeight: 2.8,
+                /* indicatorPadding: EdgeInsets.symmetric(
+                  horizontal: 16,
+                ), */
+                dividerColor: Palette.monieGreen,
+                labelColor: Palette.monieGreen,
+                unselectedLabelColor: Palette.monieGrey,
+                labelStyle: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+                unselectedLabelStyle: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                ),
+                tabs: [
+                  Tab(
+                    text: 'About Item',
+                  ),
+                  Tab(
+                    text: 'Reviews',
+                  ),
+                ],
               ),
             ),
-            child: const TabBar(
-              indicatorColor: Palette.monieGreen,
-              indicatorWeight: 2.8,
-              indicatorPadding: EdgeInsets.symmetric(
-                horizontal: 16,
-              ),
-              dividerColor: Palette.monieGreen,
-              labelColor: Palette.monieGreen,
-              unselectedLabelColor: Palette.monieGrey,
-              labelStyle: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-              unselectedLabelStyle: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.normal,
-              ),
-              tabs: [
-                Tab(
-                  text: 'About Item',
-                  /* child: Text(
-                    'About Item',
-                    textAlign: TextAlign.left,
-                    /* style: TextStyle(
-                      fontSize: 15,
-                    ), */
-                  ), */
-                ),
-                Tab(
-                  text: 'Reviews',
-                  /* child: Text(
-                    'Reviews',
-                    textAlign: TextAlign.left,
-                    /* style: TextStyle(
-                      fontSize: 15,
-                    ), */
-                  ), */
-                ),
+          ),
+          const SizedBox(
+            height: 150,
+            child: TabBarView(
+              children: [
+                AboutItemTab(),
+                AboutItemTab(),
               ],
             ),
           ),
-        ),
-        /* const Divider(
-          height: 2,
-          color: Colors.grey,
-        ), */
-        const SizedBox(
-          height: 200,
-          child: TabBarView(
-            children: [
-              Center(
-                child: Text('Tab 1'),
-              ),
-              Center(
-                child: Text('Tab 2'),
-              ),
-            ],
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

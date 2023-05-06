@@ -39,15 +39,28 @@ class HomeProductSingle extends StatelessWidget {
       },
       child: Column(
         children: [
-          Container(
-            decoration: const BoxDecoration(
-              color: Palette.monieGrey3,
-            ),
-            child: Image.asset(
-              assetImage.toString(),
-              height: 100,
-              fit: BoxFit.cover,
-            ),
+          Stack(
+            children: [
+              Container(
+                decoration: const BoxDecoration(
+                  color: Palette.monieGrey3,
+                ),
+                child: Image.asset(
+                  assetImage.toString(),
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Positioned(
+                top: 10, // adjust this value to position the icon
+                right: 10, // adjust this value to position the icon
+                child: Icon(
+                  favorite == true ? Icons.favorite : Icons.favorite_border,
+                  color: favorite == true ? Colors.pink : Colors.grey,
+                  size: 20,
+                ),
+              ),
+            ],
           ),
           const SizedBox(height: 15),
           Padding(

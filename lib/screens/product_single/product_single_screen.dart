@@ -37,6 +37,13 @@ class ProductSingleScreenState extends State<ProductSingleScreen> {
       backgroundColor: Palette.monieGrey2,
       //
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Palette.monieBlack2,
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
         elevation: 0,
         backgroundColor: Colors.transparent,
         //title: const SearchBarForm(),

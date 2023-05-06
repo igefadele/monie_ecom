@@ -26,14 +26,11 @@ class _ProductImageSectionState extends State<ProductImageSection> {
       children: [
         Image.asset(
           widget.productImages[_selectedImageIndex],
-          height: 400,
+          height: 300,
           width: double.infinity,
           fit: BoxFit.cover,
         ),
         Positioned(
-          /*  bottom: 10,
-          right: 0,
-          left: 0, */
           top: 10.0,
           left: 10.0,
           child: Column(
@@ -64,10 +61,6 @@ class _ProductImageSectionState extends State<ProductImageSection> {
                         ),
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      /* child: Image.asset(
-                        widget.productImages[i],
-                        fit: BoxFit.cover,
-                      ), */
                     ),
                   ),
                 ),

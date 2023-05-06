@@ -57,7 +57,7 @@ class HomeProductSection extends StatelessWidget {
               Expanded(
                 child: HomeProductSingle(
                   assetImage: 'assets/monie_ecom_home/1.png',
-                  favorite: true,
+                  favorite: false,
                   type: 'Shirt',
                   name: 'Essentials Men\'s Short-Sleeve Crewneck T-Shirt',
                   rating: '4.9',
@@ -99,7 +99,7 @@ class HomeProductSection extends StatelessWidget {
               Expanded(
                 child: HomeProductSingle(
                   assetImage: 'assets/monie_ecom_home/4.png',
-                  favorite: true,
+                  favorite: false,
                   type: 'Shirt',
                   name: 'Essentials Men\'s Short-Sleeve Crewneck T-Shirt',
                   rating: '4.9',
@@ -117,7 +117,7 @@ class HomeProductSection extends StatelessWidget {
               Expanded(
                 child: HomeProductSingle(
                   assetImage: 'assets/monie_ecom_home/5.png',
-                  favorite: true,
+                  favorite: false,
                   type: 'Shirt',
                   name: 'Essentials Men\'s Short-Sleeve Crewneck T-Shirt',
                   rating: '4.9',
@@ -129,7 +129,7 @@ class HomeProductSection extends StatelessWidget {
               Expanded(
                 child: HomeProductSingle(
                   assetImage: 'assets/monie_ecom_home/6.png',
-                  favorite: true,
+                  favorite: false,
                   type: 'Shirt',
                   name: 'Essentials Men\'s Short-Sleeve Crewneck T-Shirt',
                   rating: '4.9',
