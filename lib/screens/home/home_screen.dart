@@ -1,5 +1,3 @@
-import 'package:flutter/services.dart';
-import 'package:moniepointtest/res/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/screens/home/components/home_button_row.dart';
 import 'package:moniepointtest/screens/home/components/home_product_section.dart';
@@ -42,14 +40,14 @@ class HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
+    /* SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor:
             _showAppBarBackground ? Colors.transparent : Colors.transparent,
         statusBarIconBrightness:
             _showAppBarBackground ? Brightness.dark : Brightness.dark,
       ),
-    );
+    ); */
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,
@@ -63,6 +61,10 @@ class HomeScreenState extends State<HomeScreen> {
           SearchBarIcons(),
           SizedBox(width: 20),
         ],
+        bottom: const PreferredSize(
+          preferredSize: Size.square(3),
+          child: SizedBox(height: 7),
+        ),
       ),
       body: SingleChildScrollView(
         controller: _scrollController,

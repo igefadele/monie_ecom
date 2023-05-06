@@ -5,9 +5,9 @@ import 'package:moniepointtest/wrappers/app_container.dart';
 void main() {
   //
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
-    statusBarBrightness: Brightness.dark,
-    statusBarIconBrightness: Brightness.dark,
+    //statusBarColor: Colors.transparent,
+    //statusBarBrightness: Brightness.dark,
+    //statusBarIconBrightness: Brightness.dark,
     systemNavigationBarColor: Colors.white,
     systemNavigationBarDividerColor: Colors.grey,
     systemNavigationBarIconBrightness: Brightness.dark,
@@ -22,11 +22,13 @@ class MonieEcom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
+        ),
+      ),
       title: 'Monie Ecom',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: const AppContainer(),
     );
   }

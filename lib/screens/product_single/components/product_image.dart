@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/res/custom_colors.dart';
 
 class ProductImage extends StatelessWidget {
   final String? assetImage;
@@ -20,7 +19,7 @@ class ProductImage extends StatelessWidget {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [],
+        children: const [],
       ),
     );
   }

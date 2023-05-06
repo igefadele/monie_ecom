@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/res/custom_colors.dart';
 import 'package:moniepointtest/screens/home/components/home_product_single.dart';
-import 'package:moniepointtest/screens/voucher/voucher_screen.dart';
 
 class HomeProductSection extends StatelessWidget {
   const HomeProductSection({super.key});

@@ -41,6 +41,7 @@ class ProductSingleScreenState extends State<ProductSingleScreen> {
           icon: const Icon(
             Icons.arrow_back_ios,
             color: Palette.monieBlack2,
+            size: 24,
           ),
           onPressed: () => Navigator.of(context).pop(),
         ),

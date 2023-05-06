@@ -52,6 +52,7 @@ class SliderContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // ignore: avoid_unnecessary_containers
               Container(
                 child: Text(
                   sliderTag.toString(),
@@ -63,26 +64,22 @@ class SliderContainer extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 5),
-              Container(
-                child: Text(
-                  sliderTitle.toString(),
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    color: Palette.monieBlack1,
-                    fontSize: sliderTitleFontSize,
-                    fontWeight: FontWeight.bold,
-                  ),
+              Text(
+                sliderTitle.toString(),
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  color: Palette.monieBlack1,
+                  fontSize: sliderTitleFontSize,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 5),
-              Container(
-                child: Text(
-                  sliderDescription.toString(),
-                  textAlign: TextAlign.left,
-                  style: const TextStyle(
-                    color: Palette.monieBlack3,
-                    fontSize: 12,
-                  ),
+              Text(
+                sliderDescription.toString(),
+                textAlign: TextAlign.left,
+                style: const TextStyle(
+                  color: Palette.monieBlack3,
+                  fontSize: 12,
                 ),
               ),
               const SizedBox(height: 20),
