@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/res/custom_colors.dart';
+import 'package:moniepointtest/screens/product_single/product_single_screen.dart';
 
 class HomeProductSingle extends StatelessWidget {
   final String? type;
@@ -9,7 +10,6 @@ class HomeProductSingle extends StatelessWidget {
   final String? rating;
   final String raters;
   final String? price;
-  final Widget? screen;
 
   const HomeProductSingle({
     Key? key,
@@ -20,7 +20,6 @@ class HomeProductSingle extends StatelessWidget {
     required this.rating,
     required this.raters,
     required this.price,
-    required this.screen,
   }) : super(key: key);
 
   @override
@@ -29,103 +28,95 @@ class HomeProductSingle extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (context) => screen!,
+            builder: (context) => ProductSingleScreen(
+              name: name,
+              assetImage: assetImage,
+              rating: rating,
+              price: price,
+            ),
           ),
         );
       },
-      child: Card(
-        color: Palette.monieGrey2,
-        //shadowColor: Palette.monieGrey,
-        //surfaceTintColor: Palette.monieGrey,
-        //elevation: 5,
-        /* shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(4),
-        ), */
-        child: Column(
-          children: [
-            Column(
+      child: Column(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              color: Palette.monieGrey3,
+            ),
+            child: Image.asset(
+              assetImage.toString(),
+              height: 100,
+              fit: BoxFit.cover,
+            ),
+          ),
+          const SizedBox(height: 15),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 10,
+              bottom: 20,
+              left: 10,
+              right: 10,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  decoration: const BoxDecoration(
-                    color: Palette.monieGrey3,
-                  ),
-                  child: Image.asset(
-                    assetImage.toString(),
-                    height: 100,
-                    fit: BoxFit.cover,
+                Text(
+                  type.toString(),
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                    fontSize: 10,
+                    color: Palette.monieGrey,
                   ),
                 ),
-                const SizedBox(height: 15),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 10,
-                    bottom: 10,
-                    left: 10,
-                    right: 10,
+                const SizedBox(height: 7),
+                Text(
+                  name.toString(),
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        type.toString(),
-                        textAlign: TextAlign.left,
-                        style: const TextStyle(
-                          fontSize: 10,
-                          color: Palette.monieGrey,
+                ),
+                const SizedBox(height: 13),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.star,
+                      color: Colors.orange,
+                      size: 12,
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      '$rating | $raters',
+                      textAlign: TextAlign.left,
+                      style: const TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                    const SizedBox(width: 13),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        const SizedBox(),
+                        Text(
+                          '\$$price',
+                          textAlign: TextAlign.right,
+                          style: const TextStyle(
+                            color: Palette.monieGreen,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 7),
-                      Text(
-                        name.toString(),
-                        textAlign: TextAlign.left,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 13),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Icon(
-                            Icons.star,
-                            color: Colors.orange,
-                            size: 12,
-                          ),
-                          const SizedBox(width: 4),
-                          Text(
-                            '$rating | $raters',
-                            textAlign: TextAlign.left,
-                            style: const TextStyle(
-                              fontSize: 12,
-                            ),
-                          ),
-                          const SizedBox(width: 13),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              const SizedBox(),
-                              Text(
-                                '\$$price',
-                                textAlign: TextAlign.right,
-                                style: const TextStyle(
-                                  color: Palette.monieGreen,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                )
+                      ],
+                    ),
+                  ],
+                ),
               ],
             ),
-          ],
-        ),
+          )
+        ],
       ),
     );
   }

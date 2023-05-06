@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:moniepointtest/res/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:moniepointtest/screens/home/components/home_button_row.dart';
@@ -14,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class HomeScreenState extends State<HomeScreen> {
-  ScrollController _scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
   bool _showAppBarBackground = false;
 
   @override
@@ -41,6 +42,14 @@ class HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor:
+            _showAppBarBackground ? Colors.transparent : Colors.transparent,
+        statusBarIconBrightness:
+            _showAppBarBackground ? Brightness.dark : Brightness.dark,
+      ),
+    );
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,

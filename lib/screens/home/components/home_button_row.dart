@@ -19,15 +19,15 @@ class HomeButtonRow extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: const [
           ButtonLabelWidget(
-            icon: Icons.home,
+            icon: Icons.category_outlined,
             label: 'Category',
           ),
           ButtonLabelWidget(
-            icon: Icons.flight,
+            icon: Icons.flight_sharp,
             label: 'Flight',
           ),
           ButtonLabelWidget(
-            icon: Icons.money_rounded,
+            icon: Icons.money_outlined,
             label: 'Bill',
           ),
           ButtonLabelWidget(
@@ -35,7 +35,7 @@ class HomeButtonRow extends StatelessWidget {
             label: 'Data Plan',
           ),
           ButtonLabelWidget(
-            icon: Icons.payment_rounded,
+            icon: Icons.payment_outlined,
             label: 'Top Up',
           )
         ],

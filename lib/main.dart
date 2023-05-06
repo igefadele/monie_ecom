@@ -5,20 +5,19 @@ import 'package:moniepointtest/wrappers/app_container.dart';
 void main() {
   //
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    //statusBarColor: Colors.transparent,
     statusBarColor: Colors.transparent,
     statusBarBrightness: Brightness.dark,
     statusBarIconBrightness: Brightness.dark,
-    systemNavigationBarColor: Colors.black,
-    systemNavigationBarDividerColor: Colors.black,
-    systemNavigationBarIconBrightness: Brightness.light,
+    systemNavigationBarColor: Colors.white,
+    systemNavigationBarDividerColor: Colors.grey,
+    systemNavigationBarIconBrightness: Brightness.dark,
   ));
   //
-  runApp(const MyApp());
+  runApp(const MonieEcom());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MonieEcom extends StatelessWidget {
+  const MonieEcom({super.key});
 
   @override
   Widget build(BuildContext context) {

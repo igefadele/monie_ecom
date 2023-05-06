@@ -26,7 +26,7 @@ class SearchBarIcons extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(2),
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.pink,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.circular(3),
                   ),
@@ -60,7 +60,7 @@ class SearchBarIcons extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(2),
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.pink,
                     borderRadius: BorderRadius.circular(3),
                   ),
                   constraints: const BoxConstraints(

@@ -38,12 +38,12 @@ class AppContainerState extends State<AppContainer> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         selectedIconTheme:
-            const IconThemeData(color: Palette.monieGreen, size: 30),
+            const IconThemeData(color: Palette.monieGreen, size: 25),
         selectedItemColor: Palette.monieBlack1,
         //selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
         unselectedIconTheme: const IconThemeData(
           color: Palette.monieGrey,
-          size: 30,
+          size: 25,
         ),
         backgroundColor: Palette.monieGrey2,
         showSelectedLabels: true,
@@ -53,28 +53,28 @@ class AppContainerState extends State<AppContainer> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.only(bottom: 6.0),
+              padding: EdgeInsets.only(bottom: 4.0),
               child: Icon(Icons.home),
             ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.only(bottom: 6.0),
+              padding: EdgeInsets.only(bottom: 4.0),
               child: Icon(Icons.wallet),
             ),
             label: 'Wallet',
           ),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.only(bottom: 6.0),
+              padding: EdgeInsets.only(bottom: 4.0),
               child: Icon(Icons.money),
             ),
             label: 'Voucher',
           ),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.only(bottom: 6.0),
+              padding: EdgeInsets.only(bottom: 4.0),
               child: Icon(Icons.settings),
             ),
             label: 'Settings',
