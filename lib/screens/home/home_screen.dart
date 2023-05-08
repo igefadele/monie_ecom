@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/screens/home/components/home_button_row.dart';
-import 'package:moniepointtest/screens/home/components/home_product_section.dart';
-import 'package:moniepointtest/screens/home/components/home_slider.dart';
-import 'package:moniepointtest/screens/home/components/search_bar_form.dart';
-import 'package:moniepointtest/screens/home/components/search_bar_icons.dart';
+import 'package:monieecom/screens/home/components/home_button_row.dart';
+import 'package:monieecom/screens/home/components/home_product_section.dart';
+import 'package:monieecom/screens/home/components/home_slider.dart';
+import 'package:monieecom/screens/home/components/search_bar_form.dart';
+import 'package:monieecom/screens/home/components/search_bar_icons.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -40,14 +40,6 @@ class HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    /* SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        statusBarColor:
-            _showAppBarBackground ? Colors.transparent : Colors.transparent,
-        statusBarIconBrightness:
-            _showAppBarBackground ? Brightness.dark : Brightness.dark,
-      ),
-    ); */
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,

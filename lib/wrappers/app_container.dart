@@ -1,9 +1,9 @@
-import 'package:moniepointtest/res/custom_colors.dart';
+import 'package:monieecom/res/custom_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/screens/home/home_screen.dart';
-import 'package:moniepointtest/screens/settings/settings_screen.dart';
-import 'package:moniepointtest/screens/voucher/voucher_screen.dart';
-import 'package:moniepointtest/screens/wallet/wallet_screen.dart';
+import 'package:monieecom/screens/home/home_screen.dart';
+import 'package:monieecom/screens/settings/settings_screen.dart';
+import 'package:monieecom/screens/voucher/voucher_screen.dart';
+import 'package:monieecom/screens/wallet/wallet_screen.dart';
 
 class AppContainer extends StatefulWidget {
   const AppContainer({super.key});
@@ -61,16 +61,16 @@ class AppContainerState extends State<AppContainer> {
           BottomNavigationBarItem(
             icon: Padding(
               padding: EdgeInsets.only(bottom: 4.0),
-              child: Icon(Icons.wallet),
+              child: Icon(Icons.money),
             ),
-            label: 'Wallet',
+            label: 'Voucher',
           ),
           BottomNavigationBarItem(
             icon: Padding(
               padding: EdgeInsets.only(bottom: 4.0),
-              child: Icon(Icons.money),
+              child: Icon(Icons.wallet),
             ),
-            label: 'Voucher',
+            label: 'Wallet',
           ),
           BottomNavigationBarItem(
             icon: Padding(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/screens/home/components/button_label_widget.dart';
+import 'package:monieecom/screens/home/components/button_label_widget.dart';
 
 class HomeButtonRow extends StatelessWidget {
   const HomeButtonRow({super.key});

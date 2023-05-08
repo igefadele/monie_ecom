@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:moniepointtest/wrappers/app_container.dart';
+import 'package:monieecom/wrappers/app_container.dart';
 
 void main() {
   //
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    //statusBarColor: Colors.transparent,
+    statusBarColor: Colors.transparent,
     //statusBarBrightness: Brightness.dark,
     //statusBarIconBrightness: Brightness.dark,
     systemNavigationBarColor: Colors.white,

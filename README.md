@@ -1,4 +1,4 @@
-# moniepointtest
+# monieecom
 
 An ecommerce mobile app for MoniePoint marketplace
 

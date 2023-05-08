@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/res/custom_colors.dart';
-import 'package:moniepointtest/screens/product_single/components/app_bar_actions.dart';
-import 'package:moniepointtest/screens/product_single/components/product_image_section.dart';
-import 'package:moniepointtest/screens/product_single/components/product_info.dart';
-import 'package:moniepointtest/screens/product_single/components/tab_section.dart';
+import 'package:monieecom/res/custom_colors.dart';
+import 'package:monieecom/screens/product_single/components/app_bar_actions.dart';
+import 'package:monieecom/screens/product_single/components/product_image_section.dart';
+import 'package:monieecom/screens/product_single/components/product_info.dart';
+import 'package:monieecom/screens/product_single/components/tab_section.dart';
 
 class ProductSingleScreen extends StatefulWidget {
   final String? name;

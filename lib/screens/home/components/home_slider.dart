@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/screens/home/components/slider_container.dart';
-import 'package:moniepointtest/screens/home/home_screen.dart';
+import 'package:monieecom/screens/home/components/slider_container.dart';
+import 'package:monieecom/screens/home/home_screen.dart';
 
 class HomeSlider extends StatelessWidget {
   const HomeSlider({super.key});

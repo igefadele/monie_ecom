@@ -1,4 +1,4 @@
-import 'package:moniepointtest/res/custom_colors.dart';
+import 'package:monieecom/res/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class ButtonLabelWidget extends StatelessWidget {

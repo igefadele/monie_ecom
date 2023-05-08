@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:moniepointtest/res/custom_colors.dart';
-import 'package:moniepointtest/screens/product_single/components/about_item_tab.dart';
+import 'package:monieecom/res/custom_colors.dart';
+import 'package:monieecom/screens/product_single/components/about_item_tab.dart';
 
 class TabSection extends StatelessWidget {
   const TabSection({super.key});

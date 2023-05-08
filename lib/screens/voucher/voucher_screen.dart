@@ -10,6 +10,12 @@ class VoucherScreen extends StatefulWidget {
 class VoucherScreenState extends State<VoucherScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Text('Voucher Page'),
+        ),
+      ),
+    );
   }
 }
