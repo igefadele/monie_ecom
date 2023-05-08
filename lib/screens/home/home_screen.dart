@@ -62,7 +62,6 @@ class HomeScreenState extends State<HomeScreen> {
         controller: _scrollController,
         child: Column(
           children: const [
-            //HomeSearchBar(),
             HomeSlider(),
             HomeButtonRow(),
             HomeProductSection(),
