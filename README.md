@@ -1,6 +1,6 @@
 # monieecom
 
-An ecommerce mobile app for MoniePoint marketplace.
+An ecommerce mobile app.
 
 ## Development Process Video
 
