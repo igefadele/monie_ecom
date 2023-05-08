@@ -7,8 +7,6 @@ An ecommerce mobile app.
 This video shows you my development process for creating this app.
 [Watch Here: https://youtu.be/sCacKtnDVl4](https://youtu.be/sCacKtnDVl4)
 
-[![Everything Is AWESOME](https://yt-embed.live/embed?v=sCacKtnDVl4)](https://www.youtube.com/watch?v=sCacKtnDVl4 "Everything Is AWESOME")
-
 
 ## Connect with me
 
